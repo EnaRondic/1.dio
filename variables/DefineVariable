@@ -1,0 +1,6 @@
+<?php
+
+$name;
+echo $name;
+
+echo isset($name) ? "Variable set" : "Variable is not set";

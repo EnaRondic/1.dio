@@ -1,0 +1,20 @@
+<?php
+
+class Files{
+	function displayContent($filename) : bool{
+    
+    $result = true;
+    try{
+
+    echo "Read the content of the file: $filename" . PHP_EOL;
+    $content = file_get_contents($filename);
+    }catch(Exception $e){
+    result=false;
+    }
+    return $result;
+
+
+	}
+}
+
+$files1 = new Files();
